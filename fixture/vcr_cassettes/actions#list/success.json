@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic BASIC_AUTH_PLACEHOLDER",
+        "Accept": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://cloud.docker.com/api/audit/v1/action/?limit=2"
+    },
+    "response": {
+      "body": "{\"meta\": {\"limit\": 2, \"next\": \"/api/audit/v1/action/?limit=2&offset=2\", \"offset\": 0, \"previous\": null, \"total_count\": 4}, \"objects\": [{\"action\": \"Node Cluster Terminate\", \"can_be_canceled\": false, \"can_be_retried\": false, \"created\": \"Thu, 31 Mar 2016 23:52:07 +0000\", \"end_date\": \"Thu, 31 Mar 2016 23:52:08 +0000\", \"ip\": \"24.218.17.239\", \"location\": \"Allston, United States\", \"method\": \"DELETE\", \"object\": \"/api/infra/v1/nodecluster/ea8b07f2-75bb-496b-92c1-8b79e44fd9c9/\", \"path\": \"/api/infra/v1/nodecluster/ea8b07f2-75bb-496b-92c1-8b79e44fd9c9/\", \"resource_uri\": \"/api/audit/v1/action/8d41b383-b07e-4d42-af5d-c2bb45344156/\", \"start_date\": \"Thu, 31 Mar 2016 23:52:07 +0000\", \"state\": \"Success\", \"user_agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36\", \"uuid\": \"8d41b383-b07e-4d42-af5d-c2bb45344156\"}, {\"action\": \"Node Update\", \"can_be_canceled\": false, \"can_be_retried\": false, \"created\": \"Thu, 31 Mar 2016 23:52:00 +0000\", \"end_date\": \"Thu, 31 Mar 2016 23:52:00 +0000\", \"ip\": \"198.211.116.22\", \"location\": \"New York, United States\", \"method\": \"PATCH\", \"object\": \"/api/infra/v1/node/ad6ef8a0-5c27-4b3d-9554-421ef858ed16/\", \"path\": \"/api/infra/v1/node/ad6ef8a0-5c27-4b3d-9554-421ef858ed16/\", \"resource_uri\": \"/api/audit/v1/action/7859a8f9-5f03-4f25-8f60-0fd7d16d3e09/\", \"start_date\": \"Thu, 31 Mar 2016 23:52:00 +0000\", \"state\": \"Success\", \"user_agent\": \"network-daemon/0.21.1\", \"uuid\": \"7859a8f9-5f03-4f25-8f60-0fd7d16d3e09\"}]}",
+      "headers": {
+        "Date": "Sun, 03 Apr 2016 20:21:53 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "1507",
+        "Set-Cookie": "dockerid_device=\"blatyo:b4660c0f507b9a4457017b62:1amoWw:jpD-ujnf-_jEi6mGQD7JPADkLvA\"; httponly; Path=/; secure",
+        "Cache-Control": "no-cache, max-age=0",
+        "Cache-control": "no-cache=\"set-cookie\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubdomains",
+        "Vary": "Accept, Authorization, Cookie",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "deny",
+        "X-Tutum-Served-By": "bc0784b54815",
+        "X-XSS-Protection": "1; mode=block",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

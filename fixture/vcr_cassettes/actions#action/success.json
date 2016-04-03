@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic BASIC_AUTH_PLACEHOLDER",
+        "Accept": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://cloud.docker.com/api/audit/v1/action/7859a8f9-5f03-4f25-8f60-0fd7d16d3e09/"
+    },
+    "response": {
+      "body": "{\"action\": \"Node Update\", \"body\": \"{\\\"private_ips\\\":[{\\\"name\\\":\\\"eth0\\\",\\\"cidr\\\":\\\"198.211.116.22/24\\\"},{\\\"name\\\":\\\"eth0\\\",\\\"cidr\\\":\\\"10.10.0.5/16\\\"},{\\\"name\\\":\\\"eth1\\\",\\\"cidr\\\":\\\"10.136.4.181/16\\\"}]}\", \"can_be_canceled\": false, \"can_be_retried\": false, \"created\": \"Thu, 31 Mar 2016 23:52:00 +0000\", \"end_date\": \"Thu, 31 Mar 2016 23:52:00 +0000\", \"ip\": \"198.211.116.22\", \"is_user_action\": true, \"location\": \"New York, United States\", \"method\": \"PATCH\", \"object\": \"/api/infra/v1/node/ad6ef8a0-5c27-4b3d-9554-421ef858ed16/\", \"path\": \"/api/infra/v1/node/ad6ef8a0-5c27-4b3d-9554-421ef858ed16/\", \"resource_uri\": \"/api/audit/v1/action/7859a8f9-5f03-4f25-8f60-0fd7d16d3e09/\", \"start_date\": \"Thu, 31 Mar 2016 23:52:00 +0000\", \"state\": \"Success\", \"user_agent\": \"network-daemon/0.21.1\", \"uuid\": \"7859a8f9-5f03-4f25-8f60-0fd7d16d3e09\"}",
+      "headers": {
+        "Date": "Sun, 03 Apr 2016 20:21:53 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "824",
+        "Set-Cookie": "dockerid_device=\"blatyo:f35ebbd3e4d097857017b62:1amoWw:tKYKBga0G7ROLe3OsPHu_VSWvmo\"; httponly; Path=/; secure",
+        "Cache-Control": "no-cache, max-age=0",
+        "Cache-control": "no-cache=\"set-cookie\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubdomains",
+        "Vary": "Accept, Authorization, Cookie",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "deny",
+        "X-Tutum-Served-By": "94e11a8a35e8",
+        "X-XSS-Protection": "1; mode=block",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

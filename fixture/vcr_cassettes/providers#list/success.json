@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic BASIC_AUTH_PLACEHOLDER",
+        "Accept": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://cloud.docker.com/api/infra/v1/provider/?limit=2"
+    },
+    "response": {
+      "body": "{\"meta\": {\"limit\": 2, \"next\": \"/api/infra/v1/provider/?limit=2&offset=2\", \"offset\": 0, \"previous\": null, \"total_count\": 5}, \"objects\": [{\"available\": true, \"label\": \"Amazon Web Services\", \"name\": \"aws\", \"regions\": [\"/api/infra/v1/region/aws/us-east-1/\", \"/api/infra/v1/region/aws/cn-north-1/\", \"/api/infra/v1/region/aws/ap-northeast-1/\", \"/api/infra/v1/region/aws/eu-west-1/\", \"/api/infra/v1/region/aws/ap-southeast-1/\", \"/api/infra/v1/region/aws/ap-southeast-2/\", \"/api/infra/v1/region/aws/us-west-2/\", \"/api/infra/v1/region/aws/us-gov-west-1/\", \"/api/infra/v1/region/aws/us-west-1/\", \"/api/infra/v1/region/aws/eu-central-1/\", \"/api/infra/v1/region/aws/sa-east-1/\"], \"resource_uri\": \"/api/infra/v1/provider/aws/\"}, {\"available\": true, \"label\": \"Digital Ocean\", \"name\": \"digitalocean\", \"regions\": [\"/api/infra/v1/region/digitalocean/nyc1/\", \"/api/infra/v1/region/digitalocean/ams1/\", \"/api/infra/v1/region/digitalocean/sfo1/\", \"/api/infra/v1/region/digitalocean/nyc2/\", \"/api/infra/v1/region/digitalocean/ams2/\", \"/api/infra/v1/region/digitalocean/sgp1/\", \"/api/infra/v1/region/digitalocean/lon1/\", \"/api/infra/v1/region/digitalocean/nyc3/\", \"/api/infra/v1/region/digitalocean/ams3/\", \"/api/infra/v1/region/digitalocean/fra1/\", \"/api/infra/v1/region/digitalocean/tor1/\"], \"resource_uri\": \"/api/infra/v1/provider/digitalocean/\"}]}",
+      "headers": {
+        "Date": "Sun, 03 Apr 2016 20:21:54 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "1329",
+        "Set-Cookie": "dockerid_device=\"blatyo:f3d92ff4789959bc57017b61:1amoWv:lOf19R5_YK2121X5OZ2N5dv-y78\"; httponly; Path=/; secure",
+        "Cache-Control": "must-revalidate, max-age=3600",
+        "Cache-control": "no-cache=\"set-cookie\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubdomains",
+        "Vary": "Accept, Authorization, Cookie",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "deny",
+        "X-Tutum-Served-By": "dd8c63211872",
+        "X-XSS-Protection": "1; mode=block",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
