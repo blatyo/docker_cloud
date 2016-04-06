@@ -1,10 +1,11 @@
 defmodule DockerCloud.Page do
-  alias DockerCloud.Page.Meta
+  alias DockerCloud.Page
+  alias Page.Meta
 
   defstruct meta: %Meta{}, objects: [], next_page: nil
 
   def sig(type) do
-    %DockerCloud.Page{objects: [type]}
+    %Page{objects: [type]}
   end
 
   def count(page) do
@@ -18,14 +19,15 @@ defmodule DockerCloud.Page do
   def reduce(page, acc, fun),
     do: reduce(page, page.meta, page.objects, acc, fun)
 
-  def reduce(page, %Meta{next: nil}, [], {:cont, acc}, _fun),
+  defp reduce(page, %Meta{next: nil}, [], {:cont, acc}, _fun),
     do: {:done, acc}
-  def reduce(page, _meta, [], acc, fun),
+  defp reduce(page, _meta, [], acc, fun),
     do: reduce(next_page(page), acc, fun)
-  def reduce(page, meta, [object|rest], {:cont, acc}, fun),
+  defp reduce(page, meta, [object|rest], {:cont, acc}, fun),
     do: reduce(%{page | objects: rest}, fun.(object, acc), fun)
 
-  def next_page(page), do: page.next_page.()
+  def next_page(%Page{next_page: nil}), do: nil
+  def next_page(%Page{next_page: next}), do: next.()
 end
 
 defimpl Enumerable, for: DockerCloud.Page do

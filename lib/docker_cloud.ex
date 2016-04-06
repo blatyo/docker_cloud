@@ -71,7 +71,9 @@ defmodule DockerCloud do
     params = Keyword.merge(options[:params], offset: Meta.next_offset(page.meta))
     options = Keyword.merge(options, params: params)
 
-    {:ok, %{page | next_page: fn -> get(client, path, options) end}}
+    {:ok, %{page | next_page: fn ->
+      get(client, path, options)
+    end}}
   end
   defp setup_next_page(item, _, _, _), do: item
 end
